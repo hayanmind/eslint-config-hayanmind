@@ -33,6 +33,16 @@ const commonRules = {
   }],
   'no-nested-ternary': 'off',
   'no-alert': 'off',
+  // Force line break if element is more than 2
+  'array-element-newline': [
+    'error',
+    { multiline: true, minItems: 1 },
+  ],
+  // Force line break after bracket if element is more than 2
+  'array-bracket-newline': [
+    'error',
+    { minItems: 2 },
+  ],
 };
 
 module.exports = {
