@@ -73,7 +73,7 @@ module.exports = {
         'react/require-default-props': ['off'],
         'react/jsx-props-no-spreading': 'off',
         'no-use-before-define': 'off', // https://stackoverflow.com/a/64024916
-        '@typescript-eslint/no-use-before-define': ['error'],
+        '@typescript-eslint/no-use-before-define': ['nofunc'],
         'no-empty-function': 'off',
         '@typescript-eslint/no-empty-function': 'off',
         '@typescript-eslint/no-var-requires': 'off',
