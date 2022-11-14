@@ -1,10 +1,8 @@
 module.exports = {
   root: true,
-  extends: [
-    './index.js',
-  ],
+  extends: ["./index.js"],
   env: {
-    'browser': true,
+    browser: true,
   },
   parserOptions: {
     ecmaFeatures: {
@@ -12,7 +10,7 @@ module.exports = {
     },
     requireConfigFile: false,
     babelOptions: {
-      presets: ['@babel/preset-react'],
+      presets: ["@babel/preset-react"],
     },
   },
 };
