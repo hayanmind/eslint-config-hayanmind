@@ -43,6 +43,8 @@ const commonRules = {
   ],
   "no-nested-ternary": "off",
   "no-alert": "off",
+  "no-promise-executor-return": "off",
+  "jest/no-identical-title": "off",
 };
 
 module.exports = {
@@ -93,7 +95,6 @@ module.exports = {
         "react/prop-types": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/default-param-last": "off",
-        "no-promise-executor-return": "off",
       },
     },
   ],
