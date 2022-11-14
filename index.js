@@ -63,7 +63,11 @@ module.exports = {
     {
       files: ["*.ts", "*.tsx"],
       parser: "@typescript-eslint/parser",
-      extends: ["plugin:@typescript-eslint/recommended", "airbnb-typescript"],
+      extends: [
+        "plugin:@typescript-eslint/recommended",
+        "airbnb-typescript",
+        "plugin:prettier/recommended",
+      ],
       plugins: ["@typescript-eslint"],
       parserOptions: {
         project: "./tsconfig.json",
