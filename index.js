@@ -68,7 +68,7 @@ module.exports = {
         "airbnb-typescript",
         "plugin:prettier/recommended",
       ],
-      plugins: ["@typescript-eslint"],
+      plugins: ["@typescript-eslint", "jest"],
       parserOptions: {
         project: "./tsconfig.json",
       },
