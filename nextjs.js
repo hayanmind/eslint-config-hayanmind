@@ -4,17 +4,15 @@ module.exports = {
   },
   parserOptions: {
     ecmaVersion: 11,
-    sourceType: 'module',
+    sourceType: "module",
     ecmaFeatures: {
       jsx: true,
     },
   },
-  extends: [
-    './react.js',
-  ],
+  extends: ["./react.js"],
   rules: {
     /* Please add only required rules for nextjs */
-    'react/react-in-jsx-scope': 'off',
-    'react/display-name': 'off',
+    "react/react-in-jsx-scope": "off",
+    "react/display-name": "off",
   },
 };
