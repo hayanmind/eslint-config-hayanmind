@@ -43,11 +43,18 @@ const commonRules = {
   ],
   "no-nested-ternary": "off",
   "no-alert": "off",
+  "no-promise-executor-return": "off",
+  "jest/no-identical-title": "off",
 };
 
 module.exports = {
   root: true,
-  extends: ["airbnb", "airbnb/hooks", "plugin:prettier/recommended"],
+  extends: [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended",
+  ],
   parser: "@babel/eslint-parser",
   plugins: ["import", "jest"],
   env: {
@@ -66,6 +73,7 @@ module.exports = {
       extends: [
         "plugin:@typescript-eslint/recommended",
         "airbnb-typescript",
+        "plugin:jest/recommended",
         "plugin:prettier/recommended",
       ],
       plugins: ["@typescript-eslint"],
@@ -87,7 +95,6 @@ module.exports = {
         "react/prop-types": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/default-param-last": "off",
-        "no-promise-executor-return": "off",
       },
     },
   ],
